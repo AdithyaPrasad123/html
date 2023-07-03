@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>polymorphism</title>
+    </head>
+    <body>
+        <script>
+            class A{
+                show(){
+                    document.write("First"+"<br>");
+                }
+            }
+            class B extends A{
+                show(){
+                    super.show();
+                    document.write("Second");
+                }
+            }
+            var b=new B();
+            b.show();
+        </script>
+    </body>
+</html>

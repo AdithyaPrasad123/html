@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation</title>
+    </head>
+    <body>
+        <script>
+            class Students{
+                constructor(name,mark){
+                    var name;
+                    var mark;
+                }
+                setName(name){
+                    this.name=name;
+                }
+                getName(){
+                    return this.name;
+                }
+                setMark(mark){
+                    this.mark=mark
+                }
+                getMark(){
+                    return this.mark;
+                }
+            }
+            var stud=new Students();
+            stud.setName("Hari");
+            stud.setMark(70);
+            document.write(stud.getName()+" "+stud.getMark());
+        </script>
+    </body>
+</html>

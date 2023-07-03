@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>multiplication</title>
+    </head>
+    <body>
+        <script>
+           
+            class A{
+                constructor(x,y){
+                    this.x=x;
+                    this.y=y;
+                                      
+                }
+                add()
+                    {
+                        let sum=this.x * this.y;
+                        document.write(`it's a value ${sum} `);
+                        
+                    }
+            }
+            class B extends A{
+               add(){
+                    super.add();
+                    // document.write("hello")
+                    
+                }
+            }
+            var result=new B(2,4);
+            result.add();
+
+        </script>
+    </body>
+</html>
